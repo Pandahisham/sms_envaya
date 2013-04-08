@@ -1,0 +1,12 @@
+diff --git a/sms_envaya.module b/sms_envaya.module
+index f4d3712..f7d4df9 100644
+--- a/sms_envaya.module
++++ b/sms_envaya.module
+@@ -79,6 +79,7 @@ function sms_envaya_callback() {
+       // @todo Not yet implemented.
+     case EnvayaSMS::ACTION_DEVICE_STATUS:
+     case EnvayaSMS::ACTION_TEST:
++      drupal_add_http_header('Content-Type', $request->get_response_type());
+       print $request->render_response();
+       return;
+     default:

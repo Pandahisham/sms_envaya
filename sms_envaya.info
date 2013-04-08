@@ -1,0 +1,7 @@
+name = "Envaya SMS"
+description = "SMS Framework gateway module for EnvayaSMS Android app."
+package = SMS Framework
+core = 7.x
+files[] = sms_envaya.module
+files[] = EnvayaSMS.php
+dependencies[] = sms
